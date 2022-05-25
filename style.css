@@ -1,0 +1,77 @@
+/* very easy */
+#checkerBoard{
+    height:400px;
+    width:400px;
+    display:grid;
+    grid-template-columns:repeat(8,12.5%);
+    grid-template-rows:repeat(8,12.5%);
+}
+.square{
+    border:2px cyan solid;
+    
+}
+.blackSquare{
+    background-color:black;
+}
+/* easy */
+.red{
+    background-color:red;
+}
+.blue{
+    background-color:blue;
+}
+
+td{
+    width:1000px;
+    height:calc(526px / 13);
+}
+table,td{
+    border: solid 1px;
+    border-collapse:collapse;
+}
+table{
+    width:1000px;
+    height:526px;
+}
+/* medium */
+#products{
+    display:grid;
+    grid-template:4fr /repeat(4,auto);
+    grid-gap:2rem;
+}
+
+.product{
+
+}
+
+
+
+/*hard*/
+#topLeft{
+    border-top-left-radius:100%;
+    border-style:solid;
+    border: white;
+}
+#topRight{
+    border-top-right-radius:100%;
+}
+#botLeft{
+    border-bottom-left-radius:100%;
+}
+#botRight{
+    border-bottom-right-radius:100%;
+}
+#pieChart {
+    height:500px;
+    width:500px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+#pieChart *{
+background-color:black;
+height:250px;
+width:250px;
+border: white 2px solid;
+}
+
