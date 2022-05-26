@@ -1,7 +1,8 @@
-/* very easy */
+/* VERY EASY - CHECKERBOARD */
 #checkerBoard{
     height:400px;
     width:400px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(8,12.5%);
     grid-template-rows:repeat(8,12.5%);
@@ -13,65 +14,111 @@
 .blackSquare{
     background-color:black;
 }
-/* easy */
-.red{
-    background-color:red;
-}
-.blue{
-    background-color:blue;
-}
 
+/* EASY - FLAG*/
+.red{
+    background-color:#B22234 ;
+}
+#blue{
+    background-color:#3C3B6E;
+    text-align:center;
+    margin-left:3rem;
+}
+#blue p{
+    color:white;
+    font-size:1.9rem;
+    margin:-1rem;
+    margin-left:.7rem;
+    letter-spacing:1.9rem;
+}
 td{
     width:1000px;
     height:calc(526px / 13);
 }
-table,td{
-    border: solid 1px;
+table{
+    margin:auto;
+    border:solid;
+}
+table, td{
     border-collapse:collapse;
 }
 table{
     width:1000px;
     height:526px;
+    max-height:526px;
 }
-/* medium */
+tbody{
+    height:526px;
+    max-height:526px;
+}
+
+/* MEDIUM - PRODUCTS*/
 #products{
     display:grid;
     grid-template:4fr /repeat(4,auto);
     grid-gap:2rem;
+    width:80%;
+    height:45%;
+    margin:auto;
 }
-
+.product *{
+width: 100%;
+}
 .product{
-
+    padding:2rem;
+    border: solid black .5rem;
+    text-align:center;
+    font-size:1.5rem;
 }
 
 
-
-/*hard*/
+/*HARD - PIE CHART*/
 #topLeft{
     border-top-left-radius:100%;
     border-style:solid;
+    background-color:brown;
     border: white;
 }
 #topRight{
     border-top-right-radius:100%;
+    background-color:green;
 }
 #botLeft{
     border-bottom-left-radius:100%;
+    background-color:cyan;
 }
 #botRight{
     border-bottom-right-radius:100%;
+    background-color:purple;
 }
 #pieChart {
     height:500px;
     width:500px;
+    margin:auto;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    grid-gap:1%;
 }
 #pieChart *{
-background-color:black;
+/* background-color:black; */
 height:250px;
 width:250px;
 border: white 2px solid;
 }
 
+nav{
+    width:100%;
+    text-align:center;
+    margin: 2rem 0 2rem 0;
+}
+nav a{
+    margin:2rem;
+    font-size:2rem;
+}
+/* Misc for index */
+#indexArticle{
+    text-align:center;
+    margin:auto;
+    font-size:3rem;
+}
